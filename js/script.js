@@ -1,9 +1,5 @@
 
 
-function openPageBtnAjudenos() {
-    window.location.href = "ajude.html";
-}
-
 function submitForm() {
     
     var name = document.getElementById("inputName").value;
