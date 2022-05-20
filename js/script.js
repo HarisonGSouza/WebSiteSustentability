@@ -1,7 +1,7 @@
 
 
 function openPageBtnAjudenos() {
-    window.location.href = "page7.html";
+    window.location.href = "ajude.html";
 }
 
 function submitForm() {
