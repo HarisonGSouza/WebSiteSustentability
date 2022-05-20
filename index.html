@@ -43,12 +43,8 @@
       </li>
           </ul>
         </div>
-        <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="background-color: transparent; font-style: grey; border-color: gray; border-style: ridge;">
-            <button class="btn btn-outline-success mr-sm-2 my-2 my-sm-0" type="submit">Search</button>
-          </form>
         <a>
-            <button class="btn btn-outline-success mr-sm-2" onclick="openPageBtnAjudenos()" type="submit" style="background-color: black; border-color: white; color: white;">Ajude-nos</button>
+            <button class="btn btn-outline-success mr-sm-2" onclick="openPageBtnAjudenos()" type="submit" style="background-color: transparent; font-style: grey; border-color: gray; border-style: ridge;">Ajude-nos</button>
         </a>
       </nav>
 <!-- --------------------------------------------------------------------------------- -->      
@@ -86,7 +82,7 @@
       </div>
 
 <!-- --------------------------------------------------------------------------------- -->      
-      <section style="background-color:lightgreen;">
+      <section class="py-3" style="background-color:lightgreen;">
         <h2>Desmatamento no Brasil</h2>
         <p style="font-style: italic;">“Apesar de o mês de dezembro ter apresentado uma redução de 49% no desmatamento,<br> 
           passando de 276 km² em 2020 para 140 km² em 2021, o recorde negativo anual é extremamente<br>  
@@ -96,7 +92,7 @@
         <p>Fonte: <a href="https://www.cnnbrasil.com.br/nacional/desmatamento-na-amazonia-em-2021-e-o-maior-dos-ultimos-10-anos/#:~:text=Em%202020%2C%20quando%20a%20devasta%C3%A7%C3%A3o,diante%20das%20consequ%C3%AAncias%20dessa%20destrui%C3%A7%C3%A3o.">CNN Brasil</a> </p>
       </section>
       
-      <section style="background-color:ghostwhite;">
+      <section class="py-3" style="background-color:blanchedalmond;">
         <h2>Poluição do ar no Brasil</h2>
         <p style="font-style: italic;">As principais fontes poluidoras do ar brasileiro são os processos industriais, o setor de transportes e a queima de<br> 
           biomassa. O dano à saúde pública é indiscriminado afetando praticamente qualquer vulnerabilidade humana: aumenta o <br>
@@ -113,58 +109,62 @@
 <!-- --------------------------------------------------------------------------------- -->
       <div class="card-group">
         <div class="card">
-          <img src="img/imagem.jpg" class="card-img-top" alt="...">
+          <a href="page2.html"><img src="img/imagem.jpg" class="card-img-top" alt="..."></a>
           <div class="card-body">
-            <h5 class="card-title">Como combater o desmatamento</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <h5 class="card-title">Desmatamento da Amazônia foi o maior em 10 anos</h5>
+            <p class="card-text">Em abril de 2020, o aumento da área desmatada na região foi de 171% em relação ao mesmo período de 2019 ...
+            </p>
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
         </div>
         <div class="card">
-          <img src="img/imagem2.jpeg" class="card-img-top" alt="...">
+          <a href="page3.html"><img src="img/imgpo.webp" class="card-img-top" alt="..." height="287"></a>
           <div class="card-body">
-            <h5 class="card-title">Como combater a poluição do ar</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <h5 class="card-title">Poluição do ar mata mais que o tabaco, alertam cientistas</h5>
+            <p class="card-text">A poluição do ar foi responsável por 8,8 milhões de mortes em 2015. Destas mortes, a maioria ocorreu por doenças cardiovasculares...</p>
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
         </div>
         <div class="card">
-          <img src="img/img-1.jpeg" class="card-img-top" alt="...">
+          <a href="page4.html"><img src="img/imagem2.jpeg" class="card-img-top" alt="..." height="287"></a>
           <div class="card-body">
             <h5 class="card-title">Como combater a poluição das águas</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text">Os principais poluentes da água incluem bactérias, vírus, parasitas, fertilizantes, pesticidas, medicamentos, nitratos, fosfatos, plásticos, resíduos fecais e até substâncias radioativas. Estes elementos nem sempre tingem a água, de tal forma que a poluição hídrica é invisível muitas vezes.</p>
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
         </div>
       </div>
 <!-- --------------------------------------------------------------------------------- -->
+
+
+
   <div class="py-3" style="text-align:left; background-color: green;">
     <form style="margin:auto; width: 520px;">
-      <h2 style="text-align: center;"><u>Contato</u></h2>
+      <h2 style="text-align: center;">Contato</h2>
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Nome</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" style="text-align:center">
+        <input type="name" class="form-control" id="inputName" style="text-align:center">
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Sobrenome</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" style="text-align:center">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Email</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="seu.email@exemplo.com" style="text-align:center">
+        <label for="exampleFormControlInput2" class="form-label">Sobrenome</label>
+        <input type="sobrenome" class="form-control" id="inputSobrenome" style="text-align:center">
       </div>
       <div class="mb-3">
         <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <textarea class="form-control" id="inputMensagem" rows="3"></textarea>
       </div>
       <form>
         <div id="botao">
-           <input type="submit" name="botao" value="ENVIAR DADOS" class="botaoEnviar" />
+           <input type="button" name="botao" value="CONFIRMAR DADOS" class="botaoEnviar" onclick="submitForm()"/>
+           <label id="labelEnviaEmail" class="mx-auto" style="background-color:rgb(171, 128, 19); border: 1px solid white; width: 350px; padding: 20px; margin: 20px; font: bold;" for="exampleFormControlTextarea1" class="form-label">ENVIAR EMAIL</label>
         </div>
      </form>
     </form>
   </div>
-<!-- --------------------------------------------------------------------------------- -->
+
+
+
+  <!-- --------------------------------------------------------------------------------- -->
       <footer class="text-center text-white" style="background-color: black;">
       
         <!-- Copyright -->
