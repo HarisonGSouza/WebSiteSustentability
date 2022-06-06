@@ -8,81 +8,64 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body class="body">
-<!-- <body class="body" style="background-image:url(img/img-3.jpeg); background-repeat: no-repeat;   background-attachment: fixed; background-size: cover;   background-size: 100% 100%;"> -->
-
-  <!-- <div class="pos-f-t">
-        <div class="collapse" id="navbarToggleExternalContent">
-          <div class="bg-dark p-4">
-            <h5 class="text-white h4">Collapsed content</h5>
-            <span class="text-muted">Toggleable via the navbar brand.</span>
-          </div>
-        </div>
-        <nav class="navbar navbar-dark bg-dark">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </nav>
-      </div> -->
-      
+<!-- --------------------------------------------------------------------------------- -->
     <nav class="navbar navbar-expand-lg navbar-dark py-3" style="background-color: black;">
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav">            
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Principais Artigos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sobre</a>
-            </li>
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Contato
+                  Artigos
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="desmatamento.html">Sobre Desmatamento</a>
+                  <a class="dropdown-item" href="poluicao-do-ar.html">Sobre Poluição Do Ar</a>
+                  <a class="dropdown-item" href="poluicao-da-agua.html">Sobre Poluição Da Água</a>
                 </div>
-              </li>
+            </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sobre.html">Sobre</a>
+        </li>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contato.html">Contato</a>
+      </li>
           </ul>
         </div>
-
-        <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="background-color: transparent; font-style: grey; border-color: gray; border-style: ridge;">
-            <button class="btn btn-outline-success mr-sm-2 my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        <a>
-            <button class="btn btn-outline-success mr-sm-2" type="submit" style="background-color: black; border-color: white; color: white;">Ajude-nos</button>
-        </a>
-
-          
       </nav>
-      
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+<!-- --------------------------------------------------------------------------------- -->      
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="border: 2px solid black;">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
           </ol>
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="img/imagem.jpg" alt="First slide" width="300" height="400">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="img/imagem2.jpeg" alt="Second slide" width="300" height="400">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="img/imagem3.jpeg" alt="Third slide" width="300" height="400">
-          </div>
+            <div class="carousel-item active">
+              <a href="desmatamento.html">
+              <img class="d-block w-100" src="img/img1.png" alt="First slide" width="300" height="400">
+              </a>
+            </div>
+              <div class="carousel-item">
+                <a href="poluicao-do-ar.html">
+                <img class="d-block w-100" src="img/img2.png" alt="Second slide" width="300" height="400">
+              </a>
+              </div>
+            <div class="carousel-item">
+              <a href="poluicao-da-agua.html">
+              <img class="d-block w-100" src="img/img3.png" alt="Third slide" width="300" height="400">
+            </a>
+            </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -93,8 +76,9 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-      <br>
-      <section style="background-color:lightgreen;">
+
+<!-- --------------------------------------------------------------------------------- -->      
+      <section class="py-3" style="background-color:lightgreen;">
         <h2>Desmatamento no Brasil</h2>
         <p style="font-style: italic;">“Apesar de o mês de dezembro ter apresentado uma redução de 49% no desmatamento,<br> 
           passando de 276 km² em 2020 para 140 km² em 2021, o recorde negativo anual é extremamente<br>  
@@ -104,7 +88,7 @@
         <p>Fonte: <a href="https://www.cnnbrasil.com.br/nacional/desmatamento-na-amazonia-em-2021-e-o-maior-dos-ultimos-10-anos/#:~:text=Em%202020%2C%20quando%20a%20devasta%C3%A7%C3%A3o,diante%20das%20consequ%C3%AAncias%20dessa%20destrui%C3%A7%C3%A3o.">CNN Brasil</a> </p>
       </section>
       
-      <section style="background-color:ghostwhite;">
+      <section class="py-3" style="background-color:blanchedalmond;">
         <h2>Poluição do ar no Brasil</h2>
         <p style="font-style: italic;">As principais fontes poluidoras do ar brasileiro são os processos industriais, o setor de transportes e a queima de<br> 
           biomassa. O dano à saúde pública é indiscriminado afetando praticamente qualquer vulnerabilidade humana: aumenta o <br>
@@ -112,70 +96,71 @@
         <p>Fonte: <a href="https://veja.abril.com.br/coluna/matheus-leitao/estado-da-qualidade-do-ar-no-brasil/">Veja Abril</a> </p>
       </section>
 
-      <section style="background-color:lightskyblue;">
-        <h2>Poluição das aguas no Brasil</h2>
+      <section class="py-3" style="background-color:lightskyblue;">
+        <h2>Poluição das águas no Brasil</h2>
         <p style="font-style: italic;">Mais de 95% do lixo encontrado nas praias brasileiras é composto por itens feitos de plástico, como garrafas, <br>
           copos descartáveis, canudos, cotonetes, embalagens de sorvete e redes de pesca. </p>
         <p>Fonte: <a href="https://www.bbc.com/portuguese/brasil-42779388">BBC</a> </p>
       </section>
-      <br>
-
+<!-- --------------------------------------------------------------------------------- -->
       <div class="card-group">
         <div class="card">
-          <img src="img/imagem.jpg" class="card-img-top" alt="...">
+          <a href="desmatamento.html"><img src="img/imagem.jpg" class="card-img-top" alt="..."></a>
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <h5 class="card-title">Desmatamento da Amazônia foi o maior em 10 anos</h5>
+            <p class="card-text">Em abril de 2020, o aumento da área desmatada na região foi de 171% em relação ao mesmo período de 2019 ...
+            </p>
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
         </div>
         <div class="card">
-          <img src="img/imagem2.jpeg" class="card-img-top" alt="...">
+          <a href="poluicao-do-ar.html"><img src="img/imgpo.webp" class="card-img-top" alt="..." height="287"></a>
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <h5 class="card-title">Poluição do ar mata mais que o tabaco, alertam cientistas</h5>
+            <p class="card-text">A poluição do ar foi responsável por 8,8 milhões de mortes em 2015. Destas mortes, a maioria ocorreu por doenças cardiovasculares...</p>
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
         </div>
         <div class="card">
-          <img src="img/img-1.jpeg" class="card-img-top" alt="...">
+          <a href="poluicao-da-agua.html"><img src="img/imagem2.jpeg" class="card-img-top" alt="..." height="287"></a>
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <h5 class="card-title">Como combater a poluição das águas</h5>
+            <p class="card-text">Os principais poluentes da água incluem bactérias, vírus, parasitas, fertilizantes, pesticidas, medicamentos, nitratos, fosfatos, plásticos, resíduos fecais e até substâncias radioativas. Estes elementos nem sempre tingem a água, de tal forma que a poluição hídrica é invisível muitas vezes.</p>
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
         </div>
       </div>
+<!-- --------------------------------------------------------------------------------- -->
 
-  <br>
+
+
   <div class="py-3" style="text-align:left; background-color: green;">
     <form style="margin:auto; width: 520px;">
       <h2 style="text-align: center;">Contato</h2>
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Nome</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" style="text-align:center">
+        <input type="name" class="form-control" id="inputName" style="text-align:center">
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Sobrenome</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" style="text-align:center">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Email</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" style="text-align:center">
+        <label for="exampleFormControlInput2" class="form-label">Sobrenome</label>
+        <input type="sobrenome" class="form-control" id="inputSobrenome" style="text-align:center">
       </div>
       <div class="mb-3">
         <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <textarea class="form-control" id="inputMensagem" rows="3"></textarea>
       </div>
       <form>
         <div id="botao">
-           <input type="submit" name="botao" value="ENVIAR DADOS" class="botaoEnviar" />
+           <input type="button" name="botao" value="CONFIRMAR DADOS" class="botaoEnviar" onclick="submitForm()"/>
+           <label id="labelEnviaEmail" class="mx-auto" style="background-color:rgb(171, 128, 19); border: 1px solid white; width: 350px; padding: 20px; margin: 20px; font: bold;" for="exampleFormControlTextarea1" class="form-label">ENVIAR EMAIL</label>
         </div>
      </form>
     </form>
   </div>
 
-      <br>
+
+
+  <!-- --------------------------------------------------------------------------------- -->
       <footer class="text-center text-white" style="background-color: black;">
       
         <!-- Copyright -->
@@ -185,7 +170,7 @@
         </div>
         <!-- Copyright -->
       </footer>
-
+<!-- --------------------------------------------------------------------------------- -->
     <script src="js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 </body>
